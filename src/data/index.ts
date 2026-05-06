@@ -214,19 +214,19 @@ export const skills: Skill[] = [
 export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
-    url: "https://github.com/username",
+    url: "https://github.com/Cloud-Based",
     icon: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/username",
+    url: "https://linkedin.com/in/sya-akrq",
     icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png",
   },
-  // {
-  //   name: "Twitter",
-  //   url: "https://twitter.com/username",
-  //   icon: "https://cdn-icons-png.flaticon.com/512/733/733579.png",
-  // },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/sya.akrq",
+    icon: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+  },
   // {
   //   name: "Dribbble",
   //   url: "https://dribbble.com/username",

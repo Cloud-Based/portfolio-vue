@@ -42,11 +42,11 @@
 
       <!-- CTA Button -->
       <a
-        href="/resume.pdf"
-        download
+        href="mailto:aq.syaiful@gmail.com?subject=Hiring Inquiry&body=Hello, I’m interested in your profile and would like to discuss potential opportunities."
+        target="_blank"
         class="hidden md:inline-flex px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-2xl hover:shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 hover:-translate-y-1"
       >
-        Get Resume
+        Hire Me
       </a>
 
       <!-- Mobile Menu Button -->
@@ -72,7 +72,7 @@
 <script setup lang="ts">
 const navLinks = [
   { name: "Home", href: "#hero" },
-  { name: "Projects", href: "#projects" },
+  // { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Contact", href: "#contact" },
