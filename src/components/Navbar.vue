@@ -4,11 +4,15 @@
   >
     <div class="section-container flex items-center justify-between h-20">
       <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <div
           class="w-12 h-12 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300"
         >
-          <span class="text-2xl font-black text-white">S</span>
+          <img
+            src="/assets/favicon.jpg"
+            alt="experience"
+            class="w-12 h-12 rounded-xl object-contain"
+          />
         </div>
         <div>
           <h1
@@ -18,7 +22,7 @@
           </h1>
           <p class="text-sm text-gray-400">Web Developer</p>
         </div>
-      </NuxtLink>
+      </a>
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8">

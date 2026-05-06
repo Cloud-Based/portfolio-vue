@@ -11,7 +11,7 @@
           v-if="experience.logo"
           :src="experience.logo"
           :alt="experience.company"
-          class="w-12 h-12 rounded-xl object-cover"
+          class="w-12 h-12 rounded-xl object-contain"
         />
         <span v-else class="text-2xl font-bold text-white">{{
           experience.company.charAt(0)

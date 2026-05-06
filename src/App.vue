@@ -37,7 +37,7 @@
           </div>
 
           <div class="flex gap-6">
-            <a
+            <!-- <a
               href="#"
               class="text-gray-400 hover:text-white transition-colors p-2"
               >Privacy</a
@@ -51,7 +51,7 @@
               href="#"
               class="text-gray-400 hover:text-white transition-colors p-2"
               >Terms</a
-            >
+            > -->
           </div>
         </div>
 

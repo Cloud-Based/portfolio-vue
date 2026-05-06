@@ -59,8 +59,8 @@
       <div
         class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20"
       >
-        <NuxtLink
-          to="#projects"
+        <a
+          href="#experience"
           class="group relative px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-lg rounded-3xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden w-full sm:w-auto"
         >
           <span class="relative z-10 flex items-center justify-center gap-3">
@@ -82,7 +82,7 @@
           <div
             class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 -translate-x-full group-hover:translate-x-0 transition-transform duration-700"
           ></div>
-        </NuxtLink>
+        </a>
 
         <a
           href="/resume.pdf"
@@ -114,6 +114,4 @@
 
 <script setup lang="ts">
 import TechStack from './reusable/TechStack.vue';
-
-// Import data jika diperlukan
 </script>
