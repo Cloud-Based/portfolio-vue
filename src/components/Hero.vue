@@ -1,5 +1,6 @@
 <template>
-  <section id="hero"
+  <section
+    id="hero"
     class="section-container min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
   >
     <!-- Background Particles -->
@@ -48,8 +49,8 @@
       <p
         class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
       >
-        Web Developer focused on crafting clean, scalable, and performant
-        web experiences with modern tools like
+        Web Developer focused on crafting clean, scalable, and performant web
+        experiences with modern tools like
         <span class="font-semibold text-white">Laravel Framework</span>,
         <span class="font-semibold text-white">Vue.JS</span>, and
         <span class="font-semibold text-white">TypeScript</span>.
@@ -84,34 +85,85 @@
           ></div>
         </a>
 
-        <a
-          href="/resume.pdf"
-          download
-          class="px-10 py-5 border-2 border-white/30 text-white font-semibold text-lg rounded-3xl backdrop-blur-sm hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center gap-3"
-        >
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        <div class="relative inline-block w-full sm:w-auto group">
+          <!-- BUTTON -->
+          <button
+            class="px-10 py-5 border-2 border-white/30 text-white font-semibold text-lg rounded-3xl backdrop-blur-sm hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 w-full flex items-center justify-center gap-3"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-            ></path>
-          </svg>
-          Download CV
-        </a>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+
+            Download CV
+
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- DROPDOWN -->
+          <div
+            class="absolute left-0 mt-3 w-full min-w-[220px] rounded-2xl border border-white/20 bg-black/70 backdrop-blur-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+          >
+            <!-- INDONESIA -->
+            <a
+              href="/public/cv/CV_Syaiful-Akromul-Q_ID.pdf"
+              download
+              class="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition"
+            >
+              🇮🇩 CV Bahasa Indonesia
+            </a>
+
+            <!-- ENGLISH -->
+            <a
+              href="/public/cv/CV_Syaiful-Akromul-Q_EN.pdf"
+              download
+              class="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition"
+            >
+              🇺🇸 CV English
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Tech Stack Preview -->
-      <TechStack :items="['Vue.JS', 'TypeScript Programming', 'Tailwind CSS', 'Node.js', 'Laravel Framework', 'REST APIs', 'Wordpress CMS', 'MySQL', 'Git Version Control System']" />
+      <TechStack
+        :items="[
+          'Vue.JS',
+          'TypeScript Programming',
+          'Tailwind CSS',
+          'Node.js',
+          'Laravel Framework',
+          'REST APIs',
+          'Wordpress CMS',
+          'MySQL',
+          'Git Version Control System',
+        ]"
+      />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import TechStack from './reusable/TechStack.vue';
+import TechStack from "./reusable/TechStack.vue";
 </script>
