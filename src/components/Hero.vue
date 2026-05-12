@@ -26,7 +26,7 @@
     <div class="text-center z-10 max-w-5xl mx-auto animate-fade-in">
       <!-- Availability Badge -->
       <div
-        class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-2xl mb-8 border border-white/20 hover:bg-white/20 transition-all duration-300"
+        class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-2xl mb-8 mt-8 border border-white/20 hover:bg-white/20 transition-all duration-300"
       >
         <div class="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
         <span class="text-lg font-semibold text-white"
