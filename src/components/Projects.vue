@@ -31,8 +31,8 @@
 
     <!-- All Projects CTA -->
     <div class="text-center">
-      <NuxtLink
-        to="/projects"
+      <a
+        href="/projects"
         class="group inline-flex items-center gap-3 px-10 py-5 bg-white/10 backdrop-blur-xl border border-white/20 text-white font-semibold text-lg rounded-3xl hover:bg-white/20 hover:border-white/50 transition-all duration-500 hover:shadow-2xl hover:shadow-white/10"
       >
         View All Projects
@@ -49,7 +49,7 @@
             d="M17 8l4 4m0 0l-4 4m4-4H3"
           ></path>
         </svg>
-      </NuxtLink>
+      </a>
     </div>
   </section>
 </template>

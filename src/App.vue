@@ -3,14 +3,7 @@
     <!-- Navbar -->
     <Navbar />
 
-    <!-- Main Content -->
-    <main>
-      <Hero />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
-    </main>
+    <router-view />
 
     <!-- Footer -->
     <footer
@@ -24,7 +17,11 @@
             <div
               class="w-12 h-12 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center"
             >
-              <span class="text-xl font-black text-white">S</span>
+              <img
+                src="/assets/favicon.jpg"
+                alt="experience"
+                class="w-12 h-12 rounded-xl object-contain"
+              />
             </div>
             <div>
               <h3
@@ -37,7 +34,7 @@
           </div>
 
           <div class="flex gap-6">
-            <a
+            <!-- <a
               href="#"
               class="text-gray-400 hover:text-white transition-colors p-2"
               >Privacy</a
@@ -51,14 +48,15 @@
               href="#"
               class="text-gray-400 hover:text-white transition-colors p-2"
               >Terms</a
-            >
+            > -->
           </div>
         </div>
 
-        <div class="border-t border-white/10 mt-12 pt-8 text-gray-500 text-sm text-center">
+        <div
+          class="border-t border-white/10 mt-12 pt-8 text-gray-500 text-sm text-center"
+        >
           <p>
-            &copy; 2026 Syaiful. Built using Vue 3, TypeScript & Tailwind
-            CSS.
+            &copy; 2026 Syaiful. Built using Vue 3, TypeScript & Tailwind CSS.
           </p>
         </div>
       </div>
@@ -68,9 +66,4 @@
 
 <script setup lang="ts">
 import Navbar from "@/components/Navbar.vue";
-import Hero from "@/components/Hero.vue";
-import Projects from "@/components/Projects.vue";
-import Skills from "@/components/Skills.vue";
-import Experience from "@/components/Experience.vue";
-import Contact from "@/components/Contact.vue";
 </script>

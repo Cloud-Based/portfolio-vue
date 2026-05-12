@@ -16,7 +16,7 @@
     </div>
 
     <!-- Skills Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
       <SkillCard
         v-for="skill in skills"
         :key="skill.name"

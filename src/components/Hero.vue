@@ -1,5 +1,6 @@
 <template>
-  <section id="hero"
+  <section
+    id="hero"
     class="section-container min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
   >
     <!-- Background Particles -->
@@ -25,7 +26,7 @@
     <div class="text-center z-10 max-w-5xl mx-auto animate-fade-in">
       <!-- Availability Badge -->
       <div
-        class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-2xl mb-8 border border-white/20 hover:bg-white/20 transition-all duration-300"
+        class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-2xl mb-8 mt-8 border border-white/20 hover:bg-white/20 transition-all duration-300"
       >
         <div class="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
         <span class="text-lg font-semibold text-white"
@@ -48,8 +49,8 @@
       <p
         class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
       >
-        Web Developer focused on crafting clean, scalable, and performant
-        web experiences with modern tools like
+        Web Developer focused on crafting clean, scalable, and performant web
+        experiences with modern tools like
         <span class="font-semibold text-white">Laravel Framework</span>,
         <span class="font-semibold text-white">Vue.JS</span>, and
         <span class="font-semibold text-white">TypeScript</span>.
@@ -59,8 +60,8 @@
       <div
         class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20"
       >
-        <NuxtLink
-          to="#projects"
+        <a
+          href="#experience"
           class="group relative px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-lg rounded-3xl shadow-2xl hover:shadow-emerald-500/50 transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden w-full sm:w-auto"
         >
           <span class="relative z-10 flex items-center justify-center gap-3">
@@ -82,38 +83,87 @@
           <div
             class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 -translate-x-full group-hover:translate-x-0 transition-transform duration-700"
           ></div>
-        </NuxtLink>
-
-        <a
-          href="/resume.pdf"
-          download
-          class="px-10 py-5 border-2 border-white/30 text-white font-semibold text-lg rounded-3xl backdrop-blur-sm hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center gap-3"
-        >
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-            ></path>
-          </svg>
-          Download CV
         </a>
+
+        <div class="relative inline-block w-full sm:w-auto group">
+          <!-- BUTTON -->
+          <button
+            class="px-10 py-5 border-2 border-white/30 text-white font-semibold text-lg rounded-3xl backdrop-blur-sm hover:bg-white/20 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 w-full flex items-center justify-center gap-3"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+
+            Download CV
+
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- DROPDOWN -->
+          <div
+            class="absolute left-0 mt-3 w-full min-w-[220px] rounded-2xl border border-white/20 bg-black/70 backdrop-blur-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+          >
+            <!-- INDONESIA -->
+            <a
+              href="/public/cv/CV_Syaiful-Akromul-Q_ID.pdf"
+              download
+              class="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition"
+            >
+              🇮🇩 CV Bahasa Indonesia
+            </a>
+
+            <!-- ENGLISH -->
+            <a
+              href="/public/cv/CV_Syaiful-Akromul-Q_EN.pdf"
+              download
+              class="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition"
+            >
+              🇺🇸 CV English
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Tech Stack Preview -->
-      <TechStack :items="['Vue.JS', 'TypeScript Programming', 'Tailwind CSS', 'Node.js', 'Laravel Framework', 'REST APIs', 'Wordpress CMS', 'MySQL', 'Git Version Control System']" />
+      <TechStack
+        :items="[
+          'Vue.JS',
+          'TypeScript Programming',
+          'Tailwind CSS',
+          'Node.js',
+          'Laravel Framework',
+          'REST APIs',
+          'Wordpress CMS',
+          'MySQL',
+          'Git Version Control System',
+        ]"
+      />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import TechStack from './reusable/TechStack.vue';
-
-// Import data jika diperlukan
+import TechStack from "./reusable/TechStack.vue";
 </script>
