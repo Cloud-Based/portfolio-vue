@@ -127,7 +127,7 @@
           >
             <!-- INDONESIA -->
             <a
-              href="/public/cv/CV_Syaiful-Akromul-Q_ID.pdf"
+              href="/cv/CV_Syaiful-Akromul-Q_ID.pdf"
               download
               class="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition"
             >
@@ -136,7 +136,7 @@
 
             <!-- ENGLISH -->
             <a
-              href="/public/cv/CV_Syaiful-Akromul-Q_EN.pdf"
+              href="/cv/CV_Syaiful-Akromul-Q_EN.pdf"
               download
               class="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition"
             >
