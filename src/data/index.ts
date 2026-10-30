@@ -137,10 +137,22 @@ export const experiences: Experience[] = [
 // Skills
 export const skills: Skill[] = [
   {
-    name: "Vue.js",
+    name: "VueJS",
     category: "Frontend",
     icon: "bxl-vuejs",
     color: "#42b883",
+  },
+  {
+    name: "ReactJS",
+    category: "Frontend",
+    icon: "bxl-react",
+    color: "#007db3",
+  },
+  {
+    name: "NestJS",
+    category: "Framework",
+    icon: "bx-code-alt",
+    color: "#c53100",
   },
   {
     name: "Laravel",
@@ -173,7 +185,7 @@ export const skills: Skill[] = [
     color: "#38bdf8",
   },
   {
-    name: "Node.js",
+    name: "NodeJS",
     category: "Backend",
     icon: "bxl-nodejs",
     color: "#22c55e",
@@ -195,6 +207,12 @@ export const skills: Skill[] = [
     category: "Database",
     icon: "bx-data",
     color: "#0284c7",
+  },
+  {
+    name: "PostgreSQL",
+    category: "Database",
+    icon: "bxl-postgresql",
+    color: "#016496",
   },
   {
     name: "Git",

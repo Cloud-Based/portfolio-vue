@@ -19,8 +19,6 @@
         class="text-2xl font-bold text-white group-hover:text-teal-500 transition-colors duration-500"
       >
         {{ skill.name }}
-        <i class="bx bxl-laravel text-4xl"></i>
-        <i class="bxl bx-laravel text-4xl"></i>
       </h3>
 
       <p class="text-sm text-gray-400 font-medium">

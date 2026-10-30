@@ -180,6 +180,9 @@ onBeforeUnmount(() => {
           'WordPress',
           'MySQL',
           'Git',
+          'PostgreSQL',
+          'NestJS',
+          'ReactJS'
         ]"
       />
     </div>
